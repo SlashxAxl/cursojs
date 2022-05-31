@@ -33,7 +33,7 @@ alert('Bienvenido ' + nombre + '!')*/
 
 /*******************Defafio 1********************/
 
-let nombre = prompt('Ingresa tu nombre')
+/*let nombre = prompt('Ingresa tu nombre')
 let apellido = prompt('Ingresa tu apellido')
 let domicilio = prompt('Ingresa tu domicilio')
 
@@ -77,4 +77,42 @@ function totalPago(precioJuego1, precioJuego2, precioJuego3){
 }
 totalPago(precio,precio2,precio3)
 
-alert('tu total a pagar es de ' + totalPago(precio,precio2,precio3))
+alert('tu total a pagar es de ' + totalPago(precio,precio2,precio3))*/
+
+const listaBandas = ['Guns N Roses', 'Metallica' , 'Led Zeppelin', 'Mötley Crue']
+
+console.log(listaBandas[1])
+listaBandas[1] = 'Motionless in White'
+
+console.log(listaBandas)
+console.log(listaBandas.length)
+
+listaBandas.push('Black Sabbath') 
+listaBandas.push('Dio')
+listaBandas.unshift('Van Halen')
+listaBandas.pop()
+listaBandas.shift()
+
+console.log(listaBandas)
+
+const cancion1 = {
+    nombre: 'Patience',
+    banda: 'Guns N Roses'
+}
+
+const cancion2 = {
+    nombre: 'Home Sweet Home',
+    banda: 'Mötley Crue'
+}
+
+const cancion3 = {
+    nombre: 'Slaughterhouse',
+    banda: 'Motionless in White'
+}
+
+const canciones = [cancion1, cancion2, cancion3]
+
+for(const tracklist of canciones) {
+    console.log(canciones.nombre)
+    console.log(canciones.banda)
+}
