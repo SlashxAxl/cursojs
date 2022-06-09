@@ -79,7 +79,7 @@ totalPago(precio,precio2,precio3)
 
 alert('tu total a pagar es de ' + totalPago(precio,precio2,precio3))*/
 
-const listaBandas = ['Guns N Roses', 'Metallica' , 'Led Zeppelin', 'Mötley Crue']
+/*const listaBandas = ['Guns N Roses', 'Metallica' , 'Led Zeppelin', 'Mötley Crue']
 
 console.log(listaBandas[1])
 listaBandas[1] = 'Motionless in White'
@@ -115,4 +115,20 @@ const canciones = [cancion1, cancion2, cancion3]
 for(const tracklist of canciones) {
     console.log(canciones.nombre)
     console.log(canciones.banda)
-}
+}*/
+
+/*******************DESAFIO CLASE 8 **************************/
+console.log(document)
+console.log(document.getElementById('productos'))
+console.log(document.getElementsByClassName('card'))
+console.log(document.getElementsByTagName('img'))
+
+const titulo = document.getElementsByClassName('titulo')
+titulo.innerText = 'HELLO WORLD!'
+titulo.innerHTML = '<h3>HELLO WORLD! again....<h3>'
+console.log(titulo)
+
+const parrafo = document.createElement('p')
+parrafo.innerHTML = '<p>I AM YOUR FATHER<p>'
+document.body.append(parrafo)
+console.log(parrafo)
